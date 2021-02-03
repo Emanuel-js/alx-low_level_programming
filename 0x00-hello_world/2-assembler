@@ -1,2 +1,2 @@
 #!/bin/bas
-gcc -S - $CFILE main.s
+gcc -S $CFILE -0 main.s
