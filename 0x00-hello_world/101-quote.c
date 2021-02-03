@@ -1,5 +1,5 @@
 #include <unistd.h>
-
+#include <sys/syscall.h>
 /**
  * main - Where the program starts
  *
@@ -7,9 +7,8 @@
  */
 int main(void)
 {
-	char q[] = "and that piece of art is useful\" - \
+	 char msg[]  = "and that piece of art is useful\" - \
 Dora Korpar, 2015-10-19\n";
-
-	write(2, q, 59);
+syscall(SYS_write, 1, msg, sizeof(msg));
 	return (1);
 }
