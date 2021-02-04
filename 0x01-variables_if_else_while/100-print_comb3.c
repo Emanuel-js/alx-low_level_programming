@@ -17,7 +17,7 @@ int main(void)
 			
 			if (first==second || first>second)
 			{
-			 return;
+			 return(0);
 			}
 			putchar(first + '0');   
 			putchar(second + '0');
