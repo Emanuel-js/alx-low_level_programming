@@ -9,7 +9,8 @@
 
 int main(void)
 {
-            int c, t;
+            int c; 
+            int t;
             for (c = '0'; c <= '9'; c++)
             {
               for (t = c + 1; t <= '9'; t++)
