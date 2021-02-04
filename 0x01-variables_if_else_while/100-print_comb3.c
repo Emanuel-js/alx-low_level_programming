@@ -14,11 +14,11 @@ int main(void)
 	{
 		for (second = first+1; second <= 9; second++)
 		{
+			
+			if (!first>=second)
+			{
 			putchar(first + '0');   
 			putchar(second + '0');
-			if (first>=second)
-			{
-			break;
 			}
 			else
 			{
