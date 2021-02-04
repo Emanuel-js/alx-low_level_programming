@@ -10,17 +10,17 @@ int main(void)
 	int first;
 	int second;
 
-	for (first ='0'; first <='9'; first++)  
+	for (first =0; first <=9; first++)  
 	{
-		for (second = first+1; second <= '9'; second++)
+		for (second = first+1; second <= 9; second++)
 		{
 			
 			if (first==second || first>second)
 			{
-			 break;
+			 return;
 			}
-			putchar(first);   
-			putchar(second);
+			putchar(first + '0');   
+			putchar(second + '0');
 			putchar(',');
 			putchar(' ');
 		}
