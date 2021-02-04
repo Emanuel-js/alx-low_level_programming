@@ -10,21 +10,23 @@ int main(void)
 	int first;
 	int second;
 
-	for (first = 0; first <= 8; first++)  
+	for (first = 0; first <= 9; first++)  
 	{
 		for (second = first+1; second <= 9; second++)
 		{
 			
-			if (!first>=second)
+			if (first==second || first>second)
 			{
 			putchar(first + '0');   
 			putchar(second + '0');
 			}
 			else
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(first + '0');   
+			        putchar(second + '0');
 			}
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');
