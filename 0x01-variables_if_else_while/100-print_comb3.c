@@ -10,7 +10,7 @@ int main(void)
 	int first;
 	int second;
 
-	for (first = 0; first <= 9; first++)  // 0 - 9  01 02 03 ...
+	for (first = 0; first <= 9; first++)  
 	{
 		for (second = first+1; second <= 9; second++)
 		{
