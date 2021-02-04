@@ -1,0 +1,1 @@
+c var and loop condtions
