@@ -1,35 +1,40 @@
+#include <stdlib.h>
 #include <stdio.h>
 /**
-*
-* main -Entry point
-*
-*Return: Always 0 (Success)
-*/
+ * main - Print three digit numbers separated by , and  a space
+ * Return: 0
+ */
 int main(void)
 {
-	int i;
-	int j;
-	int k;
+	int hundreds_digit = 0;
+	int tens_digit = 0;
+	int units_digit = 1;
 
-	for (i = 48 ; i < 58 ; i++)
+	while (tens_digit <= 9 && units_digit <= 9 && hundreds_digit <= 9)
 	{
-		for (j = 49; j < 58; j++)
+		if (units_digit > tens_digit && tens_digit > hundreds_digit)
 		{
-			for(k = 50; k < 58; k++)
+			putchar('0' + hundreds_digit);
+			putchar('0' + tens_digit);
+			putchar('0' + units_digit);
+			if (hundreds_digit != 7 || units_digit != 9)
 			{
-				if (i != j && i < j && j != k && j < k)
-				{
-					putchar(i);
-					putchar(j);
-					putchar(k);
-					if (i != 55 || j != 56 || k != 57)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
+		if (units_digit == 9)
+		{
+			tens_digit++;
+			units_digit = 0;
+			if (tens_digit == 9)
+			{
+				hundreds_digit++;
+				tens_digit = 0;
+				units_digit = 0;
+			}
+		}
+		units_digit++;
 	}
 	putchar('\n');
 	return (0);
