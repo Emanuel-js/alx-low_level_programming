@@ -19,11 +19,9 @@ int main(void)
 			{
 			     break;
 			}
-			else
-			{
-				putchar(first + '0');   
-			        putchar(second + '0');
-			}
+			
+			putchar(first + '0');   
+			putchar(second + '0');
 			putchar(',');
 			putchar(' ');
 		}
