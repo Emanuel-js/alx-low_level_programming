@@ -1,32 +1,28 @@
+  
 #include <stdio.h>
-
 /**
- * main - Entry point for writing all numbers between 0 and 100,
- *
- * Return: Always 0 (Success)
- */
+*
+* main -Entry point
+*
+*Return: Always 0 (Success)
+*/
+
 int main(void)
 {
-	int first;
-	int second;
-
-	for (first =0; first <=9; first++)  
-	{
-		for (second = first+1; second <= 9; second++)
-		{
-			putchar(first + '0');   
-			putchar(second + '0');
-			if (first==second || first>second)
-			{
-			 return(-1);
-			}
-			else
-			{
-				putchar(',');
-				putchar(' ');
-			}
-		}
-	}
-	putchar('\n');
-	return (0);
+int c, t;
+for (c = '0'; c <= '9'; c++)
+{
+for (t = c + 1; t <= '9'; t++)
+{
+putchar(c);
+putchar(t);
+if (c != '8' || t != '9')
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+putchar('\n');
+return (0);
 }
