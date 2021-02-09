@@ -1,4 +1,4 @@
-#include <stdio.h>
+int _putchar(char c);
 /**
  * main - print Holberton.
  *
@@ -9,7 +9,7 @@ int main(void)
 	char hob[9]= "Holberton";
 	int i;
 	for (i = 0; i < 9; i++)
-	 putchar(hob[i]);
-	 putchar('\n');
+	 _putchar(hob[i]);
+	 _putchar('\n');
 	 return (0);
 }
