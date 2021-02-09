@@ -1,17 +1,19 @@
-#include <holberton.h>
+#include "holberton.h"
 /**
- * main - intial,
+ * main - check the code for Holberton School students.
  *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 
 int main(void)
 {
-  char name[]="Holberton";
-  for(int i=0; i=sizeof(name); i++)
-  {
-  _putchar(name[i]);
-  }
-  _putchar("\n");
-  return (0);
-} 
+	char holberton[9] = "Holberton";
+	int i;
+
+	for (i = 0; i < 9; i++)
+	{
+		_putchar(holberton[i]);
+	}
+	_putchar('\n');
+	return (0);
+}
