@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <holberton.h>
 /**
  * main - intial,
  *
@@ -7,6 +7,11 @@
 
 int main(void)
 {
-  putchar();
+  char name[]="Holberton";
+  for(int i=0; i=sizeof(name); i++)
+  {
+  _putchar(name[i]);
+  }
+  _putchar("\n");
   return (0);
 } 
