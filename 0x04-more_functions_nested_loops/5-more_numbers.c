@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * more_numbers -  prints 10 times the numbers from 0 to 14.
+ * more_numbers - Print numbers between 0 to 14 incl.
  *
  * Return: Void.
  */
@@ -13,11 +13,11 @@
      for(i = 0; i < 10; i++)
      {
   
-          for(j = 0; j < 14; j++)
-          {
-                   _putchar(j); 
-          }
-          _putchar('\n');
+            for(j = 0; j < 15; j++)
+            {
+                      _putchar(j); 
+            }
+            _putchar('\n');
      }
      _putchar('\n');
  }
