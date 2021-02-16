@@ -5,15 +5,14 @@
  * @str: String to be printed
  * Return: Always 0.
  */
-
 void _puts(char *str)
 {
-  int c;
+	int c;
 
-  while (*(str + c))
-    {
-      _putchar(str[c]);
-      c++;
-    }
-  _putchar('\n');
+	while (*(str + c))
+	{
+		_putchar(str[c]);
+		c++;
+	}
+	_putchar('\n');
 }
