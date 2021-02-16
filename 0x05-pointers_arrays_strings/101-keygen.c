@@ -17,7 +17,7 @@ int main(void)
     password = (rand() % 123)+1;
     if ((password >= 65 && password <= 90) || password >= 97)
     {
-      printf("%c", (char)password);
+      printf("%c",password);
     }
     else
     {
