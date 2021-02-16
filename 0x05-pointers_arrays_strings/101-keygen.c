@@ -11,16 +11,17 @@
 int main(void)
 {
 	int r;
-	int c;
+	int count;
 	int total;
 
-
 	srand(time(NULL));
-	for (c = 0,total = 2772; total > 122; c++)
+	for (count = 0, total = 2772; total > 122; count++)
 	{
 		r = (rand() % 125) + 1;
 		printf("%c", r);
-		total = total-r;
+		total -= myrand;
 	}
 	printf("%c", total);
+
+	return (0);
 }
