@@ -16,13 +16,11 @@ int main(void)
 
 
 	srand(time(NULL));
-	for (c = 0,total = 4000; total > 10; c++)
+	for (c = 0,total = 12000; total > 100; c++)
 	{
-		r = (rand() % 5) + 1;
+		r = (rand() % 120) + 1;
 		printf("%c", r);
-		total -= r;
+		total = total-r;
 	}
 	printf("%c", total);
-
-	return (0);
 }
