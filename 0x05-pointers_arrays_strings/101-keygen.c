@@ -18,7 +18,7 @@ int main(void)
 	srand(time(NULL));
 	for (c = 0,total = 4000; total > 10; c++)
 	{
-		r = (rand() % 125) + 1;
+		r = (rand() % 5) + 1;
 		printf("%c", r);
 		total -= r;
 	}
