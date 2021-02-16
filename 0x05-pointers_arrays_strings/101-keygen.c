@@ -10,5 +10,19 @@
 
 int main(void)
 {
-	
+	int r;
+	int c;
+	int total;
+
+
+	srand(time(NULL));
+	for (c = 0,total = 1000; total > 122; c++)
+	{
+		r = (rand() % 125) + 1;
+		printf("%c", r);
+		total -= r;
+	}
+	printf("%c", total);
+
+	return (0);
 }
