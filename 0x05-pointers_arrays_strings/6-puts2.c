@@ -1,23 +1,22 @@
 #include "holberton.h"
 
 /**
- * puts2 - prints the string
- * @str: string variable
- *
- * Return: 0
+ * puts2 - Print every other character in a string
+ * @str: String whose value is to be printed
+ * Return: Always 0.
  */
- void puts2(char *str)
+void puts2(char *str)
 {
+	int i = 0;
 
-    int i = 0;
-    
-    while(str[i] != '\0')
-    {
-        if(i % 2 == 0)
-        {
-            _putchar(str[i]);
+	while (str[i] != '\0')
+	{
+		if (i % 2 == 0)
+		{
+			_putchar(str[i]);
+		}
+		i++;
+	}
 
-        }
-    }
-    _putchar('\n');
+	_putchar('\n');
 }
