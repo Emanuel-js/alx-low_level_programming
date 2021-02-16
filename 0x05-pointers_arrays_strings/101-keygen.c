@@ -12,18 +12,19 @@ int main(void)
   int len = 0, password;
 
   srand(time(NULL));
-  while (len < 8)
+  while (len <122 )
   {
     password = (rand() % 123)+1;
     if ((password >= 65 && password <= 90) || password >= 97)
     {
-      printf("%c",password);
+      printf("%c", password);
+
     }
     else
     {
       printf("%c", password % 10);
     }
-    len++;
+     len++;
   }
   printf("\n");
   return (0);
