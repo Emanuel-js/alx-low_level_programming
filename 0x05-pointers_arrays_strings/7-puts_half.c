@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * puts_half - Print second half of a string
- * @str: String whose value is to be printed
- * Return: Always 0.
+ * puts_half - prints half of a string
+ * @str: string variable
+ *
  */
  
  void puts_half(char *str)
