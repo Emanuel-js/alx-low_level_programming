@@ -10,15 +10,15 @@
 
 int main(void)
 {
-	int r;
+	int myrand;
 	int count;
 	int total;
 
 	srand(time(NULL));
 	for (count = 0, total = 2772; total > 122; count++)
 	{
-		r = (rand() % 125) + 1;
-		printf("%c", r);
+		myrand = (rand() % 125) + 1;
+		printf("%c", myrand);
 		total -= myrand;
 	}
 	printf("%c", total);
