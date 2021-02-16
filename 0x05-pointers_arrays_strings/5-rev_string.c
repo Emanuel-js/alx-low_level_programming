@@ -1,6 +1,5 @@
 #include "holberton.h"
 
-
 /**
  * rev_string - Reverse String
  * @s: Pointer to string to be reversed
