@@ -1,10 +1,10 @@
 #include "holberton.h"
 
 /**
-*rev_string - Reverse the input stining.
-*@s is ponter string.
-*Return 0.
-*/
+ * rev_string - reverse a string
+ * @s: string variable
+ * Return (0)
+ */
 void rev_string(char *s)
 {
 	int c = 0;
