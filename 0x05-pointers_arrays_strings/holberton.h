@@ -1,5 +1,6 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
+#include "stdio.h"
 extern void reset_to_98(int *n);
 extern void swap_int(int *a, int *b);
 extern int _strlen(char *s);
