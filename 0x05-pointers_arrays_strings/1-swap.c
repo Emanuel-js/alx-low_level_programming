@@ -1,13 +1,14 @@
 #include "holberton.h"
 /**
- * reset_to_98 - Reset int provided using pointers to 98.
- * @n: Int whose value is to be replaced to 98
+ * swap_int - Mirror the values of the 2 provided integers.
+ * @a: Int whose value is to be exchanged with b
+ * @b: Int whose value is to be exchanged with a
  * Return: Always 0.
  */
  void swap_int(int *a, int *b)
 {
-	 int temp = *a;
+    int temp = *a;
 	 
-	*a = *b;
-	*b = temp;
+    *a = *b;
+    *b = temp;
 }
