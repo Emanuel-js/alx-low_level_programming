@@ -1,25 +1,27 @@
 #include "holberton.h"
 #include "stdio.h"
 /**
- * _strncat - copy src string ontop of dest
- * @src: Char[] to append to dest
- * @dest: Char[] to be appended to
- * Return: Always 0.
+ * _strncat - function that concatenates two string
+ * @dest: pointer to string variable
+ * @src: pointer to string variable
+ * @n: the limiter
+ *
+ * Return: dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
-  int i, j;
+	int i, j;
 
-  for (i = 0; dest[i] != '\0'; i++)
-    {
-    }
-  for (j = 0; src[j] != '\0'; j++, i++)
-    {
-      if (j < n)
+	for (i = 0; dest[i] != '\0'; i++)
 	{
-	  dest[i] = src[j];
 	}
-    }
-  return (dest);
+	for (j = 0; src[j] != '\0'; j++, i++)
+	{
+		if (j < n)
+		{
+			dest[i] = src[j];
+		}
+	}
+	return (dest);
 
 }
