@@ -1,11 +1,9 @@
 #include "holberton.h"
 
 /**
- * cap_string - Function that capitalizes all words of a string
- *
- * @s: s is the world to be analyzed
- *
- * Return: Always 0.
+ * cap_string - capitalizes all word of a string
+ * @str: pointer to string variable
+ * Return: str
  */
 char *cap_string(char *str)
 {
