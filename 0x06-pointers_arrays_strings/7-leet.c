@@ -7,7 +7,7 @@
  */
 char *leet(char *str)
 {
-	int i, j;
+	int i=0, j;
 
 	char lower[] = "aeotl";
 	char upper[] = "AEOTL";
@@ -22,6 +22,7 @@ char *leet(char *str)
 				str[i] = numbers[j];
 			}
 		}
+		i++;
 	}
 	return (str);
 }
