@@ -13,7 +13,7 @@ char *leet(char *str)
 	char upper[] = "AEOTL";
 	char numbers[] = "43071";
 
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
 		for (j = 0; lower[j] != '\0' && upper[j] != '\0'; j++)
 		{
