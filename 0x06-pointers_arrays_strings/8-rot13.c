@@ -22,7 +22,7 @@ char *rot13(char *str)
 				str[i] = s1[j];
 			}
 		}
-    i++;
+                i++;
 	}
 	return (str);
 }
