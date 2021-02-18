@@ -1,11 +1,10 @@
 #include "holberton.h"
-
 /**
- * _strncpy - Copy str to dest
- * @n: Number of bytes to use max
- * @dest: String to copied to
- * @src: String to be copied to dest
- * Return: Always 0.
+ * _strncpy - copies a string
+ * @dest: pointer to string variable
+ * @src: pointer to string variable
+ * @n: limiter
+ * Return: dest
  */
  char *_strncpy(char *dest, char *src, int n)
 {
