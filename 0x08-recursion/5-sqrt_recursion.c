@@ -13,7 +13,7 @@ int is_square_root(int num, int root)
 	if ((root * root) == num)
 		return (root);
 
-	if (root == num / 2)
+	if (num < 0 || (root * root) > num)
 		return (-1);
 
 	return (is_square_root(num, root + 1));
@@ -27,7 +27,7 @@ int is_square_root(int num, int root)
  */
 int _sqrt_recursion(int n)
 {
-	int root = 0;
+	
 
 	if (n < 0)
 		return (-1);
@@ -35,6 +35,6 @@ int _sqrt_recursion(int n)
 	if (n == 1)
 		return (1);
 
-	return (is_square_root(n, root));
+	return (is_square_root(n, 0));
 }
 
