@@ -8,7 +8,7 @@
  * Return: If the number has a natural square root - the square root.
  *         If the number does not have a natural square root - -1.
  */
-int _sqrt(int num, int root)
+int is_square_root(int num, int root)
 {
 	if ((root * root) == num)
 		return (root);
@@ -16,7 +16,7 @@ int _sqrt(int num, int root)
 	if (root == num / 2)
 		return (-1);
 
-	return (_sqrt(num, root + 1));
+	return (is_square_root(num, root + 1));
 }
 
 /**
@@ -35,6 +35,6 @@ int _sqrt_recursion(int n)
 	if (n == 1)
 		return (1);
 
-	return (_sqrt(n, root));
+	return (is_square_root(n, root));
 }
 
