@@ -9,16 +9,17 @@
  * Return: returns the input val
  */
 
-int is_square_root(int num, int root)
+int is_square_root(int i, int j)
 {
-
-	if ((root * root) == num)
-		return (root);
-
-	if (root == num / 2)
+	if (j * j > i)
+	{
 		return (-1);
-
-	return (is_square_root(num, root + 1));
+	}
+	if (j * j == i)
+	{
+		return (j);
+	}
+	return (is_square_root(i, j + 1));
 }
 
 /**
@@ -31,12 +32,10 @@ int is_square_root(int num, int root)
  */
 
 int _sqrt_recursion(int n)
-{        
-	int root = 0;
-	
+{
 	if (n < 0)
 	{
 		return (-1);
 	}
-	return (is_square_root(n, root));
+	return (is_square_root(n, 1));
 }
