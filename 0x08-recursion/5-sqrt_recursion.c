@@ -18,7 +18,7 @@ int is_square_root(int num, int root)
 	if (root == num / 2)
 		return (-1);
 
-	return (_sqrt(num, root + 1));
+	return (is_square_root(num, root + 1));
 }
 
 /**
