@@ -31,10 +31,12 @@ int is_square_root(int num, int root)
  */
 
 int _sqrt_recursion(int n)
-{
+{        
+	int root = 0;
+	
 	if (n < 0)
 	{
 		return (-1);
 	}
-	return (is_square_root(n, 1));
+	return (is_square_root(n, root));
 }
