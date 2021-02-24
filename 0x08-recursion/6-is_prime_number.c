@@ -1,18 +1,18 @@
 #include "holberton.h"
 
 /**
- * is_prime - find a prime number
+ * divide - find a prime number
  * @i: input int i
- * @j: input int j
+ * @n: input int n
  * Return: boolean val of the state of inputs
  */
 
 int divide(int n, int i)
 {
-	if (n % i == 0)
+	if (i == 0)
 		return (0);
 
-	if (i == n / 2)
+	if (n < 2 || n % i == 0)
 		return (1);
 
 	return (divide(n, i + 1));
