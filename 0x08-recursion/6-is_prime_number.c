@@ -10,10 +10,10 @@
 int divide(int n, int i)
 {
 	if (i == 0)
-		return (1);
+		return (0);
 
 	if (n < 2 || n % i == 0)
-		return (0);
+		return (1);
 
 	return (divide(n, i + 1));
 }
