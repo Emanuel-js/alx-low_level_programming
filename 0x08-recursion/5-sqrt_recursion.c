@@ -1,5 +1,7 @@
 #include "holberton.h"
 
+int is_square_root(int i, int j);
+
 /**
  * is_squre_root - determines the square root of
  * @j: an input value
