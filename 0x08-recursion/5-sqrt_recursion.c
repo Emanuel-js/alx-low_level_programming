@@ -1,7 +1,7 @@
 #include "holberton.h"
 int is_square_root(int num, int root);
 /**
- * _sqrt - Finds the natural square root of an inputted number.
+ * is_square_root - function that returns the natural.
  * @num: The number to find the square root of.
  * @root: The root to be tested.
  *
