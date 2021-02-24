@@ -27,8 +27,6 @@ int is_square_root(int num, int root)
  */
 int _sqrt_recursion(int n)
 {
-	
-
 	if (n < 0)
 		return (-1);
 
