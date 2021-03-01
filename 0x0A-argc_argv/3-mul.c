@@ -12,12 +12,18 @@ int main(int argc , char *argv[])
 {
       int i, mul;
   
-      if (argc > 1)
+      if (argc == 3)
       {
           for (i = 1; i < argc; i++)
           {
                 mul = argv[i] * argv[i + 1];
+                printf("%d\n", mul);
           }
       }
-      return (mul);
+      else
+      {
+           printf("Error\n");
+		return (1); 
+      }
+      return (0);
 }
