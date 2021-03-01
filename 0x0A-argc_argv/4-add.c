@@ -1,4 +1,4 @@
-0;136;0c#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -10,13 +10,12 @@
  * 0 if no number is passed
  */
 int main(int argc, char *argv[])
-{
-	
-        int i, j, sum = 0;
+{	
+	int i, j, sum = 0;
 	
 	if (argc == 0)
         {
-               printf("0\n");
+                printf("0\n");
         }
 	else
 	{
