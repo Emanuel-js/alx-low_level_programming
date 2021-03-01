@@ -1,4 +1,4 @@
-#include <stdio.h>
+0;136;0c#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -11,7 +11,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, j, sum = 0;
+	
+        int i, j, sum = 0;
+	
 	if (argc == 0)
         {
                printf("0\n");
