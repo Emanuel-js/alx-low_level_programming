@@ -10,29 +10,23 @@
  * 0 if no number is passed
  */
 int main(int argc, char *argv[])
-{	
-	int i, j, sum = 0;
-	
-	if (argc == 0)
-        {
-                printf("0\n");
-        }
-	else
-	{
-		for (i = 1; i < argc; i++)
-		{
-			for (j = 0; argv[i][j]; j++)
-			{
-				if (argv[i][j] < '0' || argv[i][j] > '9')
-				{
-					printf("Error\n");
-					return (1);
-				}
-			}
+{
+	int count, num, sum = 0;
 
-			sum += atoi(argv[i]);
+	for (count = 1; count < argc; count++)
+	{
+		for (num = 0; argv[count][num]; num++)
+		{
+			if (argv[count][num] < '0' || argv[count][num] > '9')
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
+
+		sum += atoi(argv[count]);
 	}
+
 	printf("%d\n", sum);
 
 	return (0);
