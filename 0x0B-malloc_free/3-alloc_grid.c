@@ -10,7 +10,7 @@
  * Return: returns NULL on failure
  */
 
-nt **alloc_grid(int width, int height)
+int **alloc_grid(int width, int height)
 {
 	int **arr;
 	int hgt_index, wid_index;
