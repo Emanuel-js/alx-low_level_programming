@@ -15,4 +15,4 @@ char *owner;
 };
 
 
-#endif
+#endif /* ifndef DOG_H*/
